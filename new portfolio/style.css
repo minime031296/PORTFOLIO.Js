@@ -21,6 +21,11 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.container {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
 header nav {
     height : 15vh;
     width : 80%;
