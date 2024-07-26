@@ -294,6 +294,14 @@ footer {
     text-align: center;
 }
 
+#contact {
+    text-align: center;
+    &:hover {
+        text-decoration: underline ;
+        color:#00FFF5
+    }
+}
+
 footer p {
     font-size: 1rem;
     margin-bottom: 1rem;
