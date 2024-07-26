@@ -15,7 +15,7 @@
             <h1>
                 MAHAK VYAS
             </h1>
-            <ul>
+            <ul id="navbar">
               <li><a href="#">HOME</a></li>  
               <li><a href="#about">ABOUT</a></li>  
               <li><a href="#contact">CONTACT</a></li>
@@ -66,14 +66,13 @@
 <br>
 <div id="about">
     <div class="about_content">
-        <p><br><br>
-            Hello, I'm Mahak Vyas from Ujjain, Madhya Pradesh. I hold a Master's in Mathematics and a Bachelor's in IT, currently pursuing a Bachelor's in Education and honing my Computer Science skills at Masai School.
+        <p>Hello, I'm Mahak Vyas from Ujjain, Madhya Pradesh. I hold a Master's in Mathematics and a Bachelor's in IT, currently pursuing a Bachelor's in Education and honing my Computer Science skills at Masai School.
 
-            My journey is driven by a passion for learning and self-improvement. While I lack professional work experience, my dedication to education and skill development is unwavering. I believe in hard work and perseverance, which have guided my academic achievements.
-            
-            My interests include drawing, and video games, providing a balanced mix of intellectual curiosity and creative expression. Known for my diligence, attention to detail, and thoughtful decision-making, I prioritize professionalism in all my endeavors.
-            
-            I am eager to apply my skills and knowledge in a professional setting, looking to contribute positively and continuously upgrade my expertise in the MERN stack.</p>
+My journey is driven by a passion for learning and self-improvement. While I lack professional work experience, my dedication to education and skill development is unwavering. I believe in hard work and perseverance, which have guided my academic achievements.
+
+My interests include geopolitics, current world affairs, drawing, and video games, providing a balanced mix of intellectual curiosity and creative expression. Known for my diligence, attention to detail, and thoughtful decision-making, I prioritize professionalism in all my endeavors.
+
+I am eager to apply my skills and knowledge in a professional setting, looking to contribute positively and continuously upgrade my expertise in the MERN stack.</p>
     </div>
     <img id="img-mahak" src="./miscellaneous/MAHAK (2).jpg" alt="MAHAK">
 </div>
@@ -212,3 +211,16 @@
 </div>
 </body>
 </html>
+
+<script>
+    document.getElementById('btn').addEventListener('click', function() {
+        var navbar = document.getElementById('navbar');
+        if (navbar.classList.contains('show')) {
+            navbar.classList.remove('show');
+        } else {
+            navbar.classList.toggle('show');
+        }
+    });
+    
+</script>
+
