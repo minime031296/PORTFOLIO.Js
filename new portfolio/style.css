@@ -127,6 +127,7 @@ header a:hover {
     gap: 5rem;
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1nzGdpUtdu2pEX16sQmVhyBThlOvtnISkyA&usqp=CAU");
     background-size: cover;
+    
 }
 
 img {
@@ -328,10 +329,10 @@ footer p {
 }
 
 #img-mahak {
-    border: 1px solid black;
+    
     width: 100%; 
     max-width: 300px; 
-    margin-top: 50px;
+    margin-top: 70px;
 }
 
 .header-project {
@@ -584,16 +585,18 @@ header a:hover {
 }
 
 .s-container {
-    min-height : 90vh;
-    width : 90%;
-    margin : auto;
+    min-height: 90vh;
+    width: 90%;
+    margin: auto;
     display: flex;
     justify-content: center;
-    align-items: center ;
-    gap : 5rem;
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1nzGdpUtdu2pEX16sQmVhyBThlOvtnISkyA&usqp=CAU");
+    align-items: center;
+    gap: 5rem;
+    background-image: url('https://e1.pxfuel.com/desktop-wallpaper/1020/131/desktop-wallpaper-developer-backgrounds-posted-by-ryan-johnson-front-end-developer.jpg');
     background-size: cover;
+    background-repeat: no-repeat; 
 }
+
 
 img {
     width : 350px;
@@ -995,7 +998,7 @@ footer p {
         justify-content: center;
         align-items: center ;
         gap : 5rem;
-        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1nzGdpUtdu2pEX16sQmVhyBThlOvtnISkyA&usqp=CAU");
+        background-image: url("https://e1.pxfuel.com/desktop-wallpaper/1020/131/desktop-wallpaper-developer-backgrounds-posted-by-ryan-johnson-front-end-developer.jpg");
         background-size: cover;
     }
     
@@ -1418,7 +1421,7 @@ footer p {
         justify-content: center;
         align-items: center ;
         gap : 5rem;
-        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1nzGdpUtdu2pEX16sQmVhyBThlOvtnISkyA&usqp=CAU");
+        background-image: url("https://e1.pxfuel.com/desktop-wallpaper/1020/131/desktop-wallpaper-developer-backgrounds-posted-by-ryan-johnson-front-end-developer.jpg");
         background-size: cover;
     }
     
@@ -1838,7 +1841,7 @@ footer p {
         justify-content: center;
         align-items: center ;
         gap : 5rem;
-        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1nzGdpUtdu2pEX16sQmVhyBThlOvtnISkyA&usqp=CAU");
+        background-image: url("https://e1.pxfuel.com/desktop-wallpaper/1020/131/desktop-wallpaper-developer-backgrounds-posted-by-ryan-johnson-front-end-developer.jpg");
         background-size: cover;
     }
     
