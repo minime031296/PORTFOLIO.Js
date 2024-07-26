@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
 html {
     scroll-behavior: smooth;
 }
+
 :root { 
-    --bg : #222831;
-    --blue : #00FFF5;
+    --bg: #222831;
+    --blue: #00FFF5;
 }
 
 * { 
@@ -19,7 +19,6 @@ html {
 body {
     background: var(--bg);
     color: white;
-    font-family: Arial, sans-serif;
 }
 
 .container {
@@ -28,14 +27,34 @@ body {
     margin: 0 auto;
 }
 
+.header {
+    width: 100%;
+}
+
+.scroll-container {
+    height: 100vh; 
+    overflow-y: auto; 
+}
+
+header {
+    width: 100%;
+    position: fixed;
+}
+
 header nav {
-    height: 15vh;
-    width: 100%; 
-    margin: 10px 0;
     position: sticky;
+    top: 0;
+    left:0;
+    right:0;
+    background: var(--bg);
+    z-index: 1000; 
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-between;
+    align-items: start;
+    padding: 0 20px;
+    height: 15vh;
+    margin: 0; 
+    
 }
 
 header h1 {
@@ -44,13 +63,13 @@ header h1 {
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 5px;
-    position: sticky;
 }
 
 header ul {
-    display: flex;
-    gap: 5rem;
+    
+    gap: 1rem;
     list-style: none;
+  
 }
 
 header a {
@@ -63,6 +82,7 @@ header a {
     border-bottom: 2px solid var(--blue);
     overflow: hidden;
     position: relative;
+    position: sticky;
 }
 
 header a::before {
@@ -81,7 +101,7 @@ header a::before {
 
 header a:hover::before {
     transform: translateX(0);
-} 
+}
 
 header a:hover {
     color: black;
@@ -167,6 +187,11 @@ img {
     box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.4);
 }
 
+
+.scroller-controller {
+    overflow: visible;
+}
+
 .buttons button:hover, .buttons a:hover {
     transform: scale(1.1);
 }
@@ -238,6 +263,7 @@ img {
     max-width: 600px; 
     margin: auto; 
     border: none;
+    margin-top: 5px;
 }
 
 .btn-btn--download {
@@ -298,14 +324,14 @@ footer p {
 
 .about_content {
     width: 100%; 
-    max-width: 600px; }
+    max-width: 600px; 
+}
 
 #img-mahak {
     border: 1px solid black;
     width: 100%; 
     max-width: 300px; 
     margin-top: 50px;
-  
 }
 
 .header-project {
@@ -360,11 +386,30 @@ footer p {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 6px 15px;
 }
 
+
 /* Media Queries */
 @media (max-width: 1200px) {
     .container {
         width: 90%;
     }
+    
+header {
+    width: 100%;
+    position: relative;
+}
+
+header nav {
+    position: sticky;
+    top: 0;
+    background: var(--bg);
+    z-index: 1000; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 15vh;
+    margin: 0; 
+}
 }
 
 @media (max-width: 768px) {
