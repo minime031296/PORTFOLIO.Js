@@ -198,7 +198,7 @@ I am eager to apply my skills and knowledge in a professional setting, looking t
 <br>
 <br>
 <br>
-<h1 style="margin-left:30px" id="resume">Download Resume: <a href="./img/MahakVyasResume.pdf"  download id="a-btn" class="btn-btn--download">Download <span class="u-bolder">Resume</span></a>
+<h1 style="margin-left:30px" id="resume" >Download Resume: <a href="./img/MahakVyasResume.pdf"  download id="a-btn" class="btn-btn--download" target="_blank">Download <span class="u-bolder">Resume</span></a>
 </h1>
   <br>
 <br>
@@ -246,5 +246,23 @@ document.querySelectorAll('header a[href^="#"]').forEach(anchor => {
     });
 });
 
+</script>
+<script>
+    document.getElementById("a-btn").addEventListener("click", function(event) {
+        event.preventDefault();
+        
+        var link = document.createElement('a');
+        link.href = this.href;
+        link.download = 'MahakVyasResume.pdf';
+        
+        document.body.appendChild(link);
+        
+        link.click();
+        
+        document.body.removeChild(link);
+        
+        window.open(this.href, '_blank');
+    });
+    
 </script>
 
