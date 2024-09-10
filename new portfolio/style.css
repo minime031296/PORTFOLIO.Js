@@ -46,7 +46,7 @@ header nav {
     top: 0;
     left:0;
     right:0;
-    background: var(--bg);
+    background: var();
     z-index: 1000; 
     display: flex;
     justify-content: space-between;
